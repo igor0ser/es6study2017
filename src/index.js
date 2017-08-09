@@ -1,21 +1,49 @@
-var data = [
-  { "country": "Portugal", "price": 1200, "date": "2017/09/20", "duration": 7 },
-  { "country": "Spain", "price": 950, "date": "2017/10/01", "duration": 5 },
-  { "country": "Lithuania", "price": 540, "date": "2017/10/16", "duration": 7 },
-  { "country": "Greece", "price": 880, "date": "2017/09/05", "duration": 10 },
-  { "country": "Marocco", "price": 590, "date": "2017/08/24", "duration": 12 },
-  { "country": "Netherlands", "price": 640, "date": "2017/11/11", "duration": 3 },
-  { "country": "France", "price": 1490, "date": "2017/09/08", "duration": 9 },
-  { "country": "Norway", "price": 1840, "date": "2017/08/08", "duration": 11 },
-  { "country": "United Kingdom", "price": 1120, "date": "2017/10/01", "duration": 6 },
-  { "country": "Iceland", "price": 2100, "date": "2017/09/01", "duration": 10 },
-];
-console.log(data);
+import json from './data.json';
+import renderHeader from './header';
+import renderRow from './row';
 
-var root = document.getElementById('root');
+const { data } = json;
 
-var render = function(markup) {
-  root.innerHTML = markup;
+const root = document.getElementById('root');
+
+const columns = ['country', 'price', 'date', 'duration'];
+
+var renderBody = function(data, columns) {
+  return '<tbody>'+ 
+    data.map(function(rowData){
+      return renderRow(rowData, columns);
+    }).join('') + '</tbody>'
+}
+
+var renderTable = function(data, columns){
+  root.innerHTML = '<table>' 
+    + renderHeader(columns)
+    + renderBody(data, columns)
+    +'</table>';
 };
 
-render('<pre>' + JSON.stringify(data, 2, ' ') +'</pre>');
+renderTable(data, columns);
+
+document.addEventListener('click', ({ target: { dataset: { sort: key } } }) => {
+  if (!key) return;
+
+  var newData = [...data].sort(function(item1, item2){
+    if (item1[key] === item2[key]) {
+      return 0;
+    }
+    return item1[key] > item2[key] ? 1 : -1;
+  });
+
+  renderTable(newData, columns);
+});
+
+
+
+
+
+
+
+
+
+
+
