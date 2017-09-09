@@ -7,7 +7,7 @@ class Exapmle1 extends Component {
 
     this.state = {
       counter: 0,
-      values: value1 + value2 + value3 + value4
+      valuesSumm: value1 + value2 + value3 + value4
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -32,14 +32,14 @@ class Exapmle1 extends Component {
 
   render() {
     const { value1, value2, value3, value4 } = this.props;
-    const { counter, values } = this.state;
+    const { counter, valuesSumm } = this.state;
 
     return (
       <div onClick={this.handleClick}>
         <h2>Example1</h2>
         <ul>
           <li>Counter: {counter}</li>
-          <li>Values: {values}</li>
+          <li>Values summ: {valuesSumm}</li>
           <li>Value 1: {value1}</li>
           <li>Value 2: {value2}</li>
           <li>Value 3: {value3}</li>
