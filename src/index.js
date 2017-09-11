@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Exapmle1 from './Example1/Example1';
+import App from './App';
 
 ReactDOM.render(
-  <div>
-    <Exapmle1 value3={0} value4={null} />
-  </div>,
+  <App />,
   document.getElementById('root')
 );

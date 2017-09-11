@@ -1,0 +1,22 @@
+.btn {
+    padding: 8px 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    border-radius: 6px;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color .75s, color .75s;
+    margin: 5px;
+}
+
+.btn:focus {
+  box-shadow: 0 0 3px 2px #52bbed;
+  color: #f0db4f;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #e6e6fa;
+}

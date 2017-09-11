@@ -1,0 +1,16 @@
+.example4 ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 475px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.example4 li{
+  border: 1px dashed gold;
+  text-align: center;
+  margin: 3px;
+  padding: 3px;
+}

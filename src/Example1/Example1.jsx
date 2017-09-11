@@ -35,8 +35,8 @@ class Exapmle1 extends Component {
     const { counter, values } = this.state;
 
     return (
-      <div onClick={this.handleClick}>
-        <h2>Example1</h2>
+      <section onClick={this.handleClick}>
+        <h3>Example 1</h3>
         <ul>
           <li>Counter: {counter}</li>
           <li>Values: {values}</li>
@@ -45,7 +45,7 @@ class Exapmle1 extends Component {
           <li>Value 3: {value3}</li>
           <li>Value 4: {value4}</li>
         </ul>
-      </div>
+      </section>
     );
   }
 }
