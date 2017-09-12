@@ -3,7 +3,6 @@ import axios from 'axios';
 import Weather from './Weather';
 import buildUrl from './buildUrl';
 
-
 class Example4 extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +33,6 @@ class Example4 extends Component {
 
   render() {
     const { data, query } = this.state;
-    console.log(data);
 
     return (
       <section>
@@ -44,7 +42,9 @@ class Example4 extends Component {
           defaultValue={query}
           onKeyPress={this.searchCity}
         />
-        {data ? <Weather {...data} /> : 'Loading...'}
+        <b className="content">
+            {data ? <Weather {...data} /> : 'Loading...'}
+        </b>
       </section>
     );
   }

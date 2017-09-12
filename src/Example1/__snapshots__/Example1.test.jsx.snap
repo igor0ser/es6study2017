@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example1 should match snapshot 1`] = `
+<section
+  onClick={[Function]}
+>
+  <h3>
+    Example 1
+  </h3>
+  <ul>
+    <li>
+      Counter: 
+      0
+    </li>
+    <li>
+      Values summ: 
+      37
+    </li>
+    <li>
+      Value 1: 
+      10
+    </li>
+    <li>
+      Value 2: 
+      20
+    </li>
+    <li>
+      Value 3: 
+      3
+    </li>
+    <li>
+      Value 4: 
+      4
+    </li>
+    <li>
+      dummy
+    </li>
+  </ul>
+</section>
+`;

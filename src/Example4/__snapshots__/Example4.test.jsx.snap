@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example1 should render Weather widget after data is loaded 1`] = `
+<Example4>
+  <section>
+    <h3>
+      Example 4
+    </h3>
+    <input
+      defaultValue="Kiev"
+      onKeyPress={[Function]}
+      type="text"
+    />
+    <b
+      className="content"
+    >
+      <Weather
+        main={
+          Object {
+            "temp_max": 20,
+            "temp_min": 10,
+          }
+        }
+        name="cityName1"
+        weather={
+          Array [
+            Object {
+              "description": "clear sky",
+            },
+          ]
+        }
+      >
+        <div
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <strong>
+            cityName1
+          </strong>
+          : 
+          clear sky
+          , 
+          10
+           - 
+          20
+           °C
+        </div>
+      </Weather>
+    </b>
+  </section>
+</Example4>
+`;
+
+exports[`Example1 should render loading before data is loaded and fetch data 1`] = `
+<Example4>
+  <section>
+    <h3>
+      Example 4
+    </h3>
+    <input
+      defaultValue="Kiev"
+      onKeyPress={[Function]}
+      type="text"
+    />
+    <b
+      className="content"
+    >
+      Loading...
+    </b>
+  </section>
+</Example4>
+`;
+
+exports[`Example1 should rerender Weather widget after new data is loaded 1`] = `
+<Example4>
+  <section>
+    <h3>
+      Example 4
+    </h3>
+    <input
+      defaultValue="dummy"
+      onKeyPress={[Function]}
+      type="text"
+    />
+    <b
+      className="content"
+    >
+      <Weather
+        main={
+          Object {
+            "temp_max": 20,
+            "temp_min": 10,
+          }
+        }
+        name="cityName2"
+        weather={
+          Array [
+            Object {
+              "description": "clear sky",
+            },
+          ]
+        }
+      >
+        <div
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <strong>
+            cityName2
+          </strong>
+          : 
+          clear sky
+          , 
+          10
+           - 
+          20
+           °C
+        </div>
+      </Weather>
+    </b>
+  </section>
+</Example4>
+`;

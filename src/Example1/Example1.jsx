@@ -14,7 +14,7 @@ class Exapmle1 extends Component {
   }
 
   handleClick() {
-    console.log('counter before - ', this.state.counter);
+    // console.log('counter before - ', this.state.counter);
     // functional setState
     /*
     this.setState((state) => ({
@@ -27,7 +27,7 @@ class Exapmle1 extends Component {
       counter: this.state.counter + 1
     });
 
-    console.log('counter after - ', this.state.counter);
+    // console.log('counter after - ', this.state.counter);
   }
 
   render() {
