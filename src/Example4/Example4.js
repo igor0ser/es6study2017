@@ -4,7 +4,7 @@ import Weather from './Weather';
 import buildUrl from './buildUrl';
 
 
-class Example3 extends Component {
+class Example4 extends Component {
   constructor(props) {
     super(props);
 
@@ -38,7 +38,7 @@ class Example3 extends Component {
 
     return (
       <section>
-        <h3>Example 3</h3>
+        <h3>Example 4</h3>
         <input
           type="text"
           defaultValue={query}
@@ -50,4 +50,4 @@ class Example3 extends Component {
   }
 }
 
-export default Example3;
+export default Example4;

@@ -1,12 +1,14 @@
 import React, { PureComponent } from 'react';
-import Exapmle1 from './Example1/Example1';
-import Exapmle2 from './Example2/Example2';
-import Exapmle3 from './Example3/Example3';
-import Exapmle4 from './Example4/Example4';
+import Example1 from './Example1/Example1';
+import Example2 from './Example2/Example2';
+import Example3 from './Example3/Example3';
+import Example4 from './Example4/Example4';
+import Example5 from './Example5/Example5';
 
 import './styles.css';
 
-const examples = [Exapmle1, Exapmle2, Exapmle3, Exapmle4];
+
+const examples = [Example1, Example2, Example3, Example4, Example5];
 
 class App extends PureComponent {
   constructor(props) {
@@ -38,7 +40,14 @@ class App extends PureComponent {
             </button>
           ))}
         </nav>
-        <Example />
+        <Example
+            value1={null}
+            value2={0}
+        >
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, libero!
+            </p>
+        </Example>
       </div>
     );
   }

@@ -31,7 +31,7 @@ class Exapmle1 extends Component {
   }
 
   render() {
-    const { value1, value2, value3, value4 } = this.props;
+    const { value1, value2, value3, value4, children } = this.props;
     const { counter, valuesSumm } = this.state;
 
     return (
@@ -44,6 +44,7 @@ class Exapmle1 extends Component {
           <li>Value 2: {value2}</li>
           <li>Value 3: {value3}</li>
           <li>Value 4: {value4}</li>
+          <li>{children}</li>
         </ul>
       </section>
     );

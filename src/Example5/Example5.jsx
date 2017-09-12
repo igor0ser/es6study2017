@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import lodash from 'lodash';
 import ListItem from './ListItem';
 
-import './Example4.css';
+import './Example5.css';
 
-class Example4 extends Component {
+class Example5 extends Component {
     constructor(props) {
         super(props);
 
@@ -31,8 +31,8 @@ class Example4 extends Component {
         const { data } = this.state;
 
         return (
-            <section className="example4">
-              <h3>Example 4</h3>
+            <section className="example5">
+              <h3>Example 5</h3>
               <ul onClick={this.sortArray}>
                 {data.map(item => <ListItem item={item} key={item} />)}
               </ul>
@@ -41,4 +41,4 @@ class Example4 extends Component {
     }
 }
 
-export default Example4;
+export default Example5;

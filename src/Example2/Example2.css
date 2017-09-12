@@ -1,10 +1,9 @@
-.popover {
-  position: fixed;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  background-color: #f0db4f;
-  box-shadow: 0 999999px 0 999999px rgba(0, 0, 0, 0.5);
-  padding: 50px;
-  font-weight: bold;
+.logger {
+    border: 2px solid purple;
+    padding: 10px;
+}
+
+.example2 {
+    border: 2px solid gold;
+    padding: 10px;
 }
